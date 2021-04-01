@@ -1,0 +1,16 @@
+Source : - https://www.tutorialgateway.org/indicators-in-ssrs/
+
+In Indicator we use this expression because 
+
+=Fields!TotalProductCost.Value+1
+
+it means that Here we are comparing this value to "[Sum(SalesAmount)]"
+
+if salesamount value is between 0 to TotalProductcost value than it will inidcate 
+a "Red" sign 
+if Salesamount value is in range between TotalProductCost value to " " then it will indicate 
+"Yellow" sign 
+
+it means in clear Word that 
+if sales amount is less than TotalProductCost than it will show "Yello"
+else it will show "red"
