@@ -1,0 +1,18 @@
+Source : https://www.tutorialgateway.org/ssrs-lookup-function/
+
+-->
+=lookup(Fields!EmployeeKey.Value,Fields!ProductKey.Value,Fields!EnglishProductName.Value, "DSPRO")
+
+Here we are doing a join on the basis of Employeekey and Product key from Employee and Product Table and in result we want 
+Product Name from Both the table, which have matching key this is similiar like we use in join 
+
+
+
+select * from [dbo].[DimEmployee]
+select * from [dbo].[DimProduct]
+
+select e.FirstName,e.LastName,e.EmployeeKey,p.EnglishProductName
+from  [dbo].[DimEmployee] e
+left join [dbo].[DimProduct] p
+on e.EmployeeKey = p.ProductKey
+
